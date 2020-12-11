@@ -1,1 +1,45 @@
-# DPToken
+[![pipeline status](https://api.travis-ci.org/DPToken/DPToken.svg?branch=master)](https://travis-ci.org/DPToken/DPToken/)
+[![Go Report Card](https://goreportcard.com/badge/github.com/YingQm/DPToken)](https://goreportcard.com/report/github.com/YingQm/DPToken)
+ [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/DPToken/DPToken?svg=true&branch=master&passingText=Windows%20-%20OK&failingText=Windows%20-%20failed&pendingText=Windows%20-%20pending)](https://ci.appveyor.com/project/DPToken/DPToken)
+# 基于 dplatform 区块链开发 框架 开发的 DPToken 系统（v6.4.0）
+
+官方网站: https://www.DPToken.com
+
+区块链浏览器: https://mainnet.DPToken.com
+
+开发框架：https://chain.33.cn
+
+```
+注意: master 分支不是 发布版本, 不要用于生产环境
+```
+## 安装
+
+#### golang 1.12 or latest
+
+
+#### 支持make file的平台
+
+```
+git clone https://github.com/YingQm/DPToken $GOPATH/src/github.com/YingQm/DPToken
+
+//开启mod功能
+export GO111MODULE=on
+
+//国内用户需要导入阿里云代理，用于下载依赖包
+export GOPROXY=https://mirrors.aliyun.com/goproxy
+
+cd $GOPATH/src/github.com/YingQm/DPToken
+
+make
+```
+
+就可以完成编译安装
+
+### 更新go.mod
+
+```
+make update
+```
+
+
+
