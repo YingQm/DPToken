@@ -1,10 +1,10 @@
 # golang1.12 or latest)
 export GO111MODULE=on
-export CHAIN33_PATH=$(shell go list -f {{.Dir}} github.com/33cn/chain33)
+export CHAIN33_PATH=$(shell go list -f {{.Dir}} github.com/33cn/dplatform)
 export PLUGIN_PATH=$(shell go list -f {{.Dir}} github.com/33cn/plugin)
 PKG_LIST_VET := `go list ./... | grep -v "vendor" | grep -v plugin/dapp/evm/executor/vm/common/crypto/bn256`
 PKG_LIST_INEFFASSIGN= `go list -f {{.Dir}} ./... | grep -v "vendor"`
-BUILD_FLAGS = -ldflags "-X github.com/33cn/chain33/common/version.GitCommit=`git rev-parse --short=8 HEAD`"
+BUILD_FLAGS = -ldflags "-X github.com/33cn/dplatform/common/version.GitCommit=`git rev-parse --short=8 HEAD`"
 
 .PHONY: default build
 
@@ -27,9 +27,9 @@ updateplugin:
     go get github.com/33cn/plugin@master;fi
 updatechain33:
 	@if [ -n "$(version)" ]; then   \
-	go get github.com/33cn/chain33@${version}; \
+	go get github.com/33cn/dplatform@${version}; \
 	else \
-	go get github.com/33cn/chain33@master;fi
+	go get github.com/33cn/dplatform@master;fi
 
 #make update version=xxx, 同时更新chain33和plugin, 两个项目必须有相同的tag(tag必须是--vMajor.Minor.Patch--规范格式)
 update:updatechain33 updateplugin
@@ -68,8 +68,8 @@ autotest: ## build autotest binary
 	@if [ -n "$(dapp)" ]; then \
 		cd build/autotest && bash ./run.sh local $(dapp) && cd ../../; fi
 
-buildtool: ## chain33 tool
-	@go build -i -o tool `go list -f {{.Dir}} github.com/33cn/chain33`/cmd/tools
+buildtool: ## dplatform tool
+	@go build -i -o tool `go list -f {{.Dir}} github.com/33cn/dplatform`/cmd/tools
 
 toolimport: buildtool ## update plugin import
 	@./tool import --path "plugin" --packname "github.com/YingQm/DPToken/plugin" --conf "plugin/plugin.toml"

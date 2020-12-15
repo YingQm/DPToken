@@ -1,6 +1,4 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-github.com/33cn/chain33 v1.65.0 h1:YWOGdpY6XV2NAo2CqkbiDcPx3d9dwh432X7RdFxjL9g=
-github.com/33cn/chain33 v1.65.0/go.mod h1:zcbjtYkRUauam2pZqhy7vBzUaIy5NCsgRWXGjUvUP68=
 github.com/33cn/dplatform v0.0.0-20191023042802-984c8bfed2e1 h1:mzkEj9XDGM6ZieiJffwPg5YSlyOenndMGw1c3doZvVw=
 github.com/33cn/dplatform v0.0.0-20191023042802-984c8bfed2e1/go.mod h1:4I8n+Zyf3t0UKM5jjpqJY627Tub62oXkLsdzIv4r6rQ=
 github.com/33cn/dplatform v0.0.0-20191025150615-4180fe9f0aba h1:dv67Vh18lSJFL1kgrzW7mxLx4Y3qHNk2F5VqLtVKBrA=
@@ -85,7 +83,6 @@ github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6/go.mod h1:3eOhrU
 github.com/VictoriaMetrics/fastcache v1.5.3/go.mod h1:+jv9Ckb+za/P1ZRg/sulP5Ni1v49daAVERr0H3CuscE=
 github.com/XiaoMi/pegasus-go-client v0.0.0-20181029071519-9400942c5d1c h1:3fAhdHMhoSG57DjJ/dqLFfgD+FoooPbQH6szINbrr3k=
 github.com/XiaoMi/pegasus-go-client v0.0.0-20181029071519-9400942c5d1c/go.mod h1:KcL6D/4RZ8RAYzQ5gKI0odcdWUmCVlbQTOlWrhP71CY=
-github.com/YingQm/DPToken v0.0.0-20201211071639-00adcd058032 h1:zZop8P7fBnvLBWNL0YdNgImMU5OPLdv5/M0a0IjX1Gg=
 github.com/aead/siphash v1.0.1/go.mod h1:Nywa3cDsYNNK3gaciGTWPwHt0wlpNV15vwmswBAUSII=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
 github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=

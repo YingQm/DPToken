@@ -11,8 +11,8 @@ logs/
 *.log
 *.tar.gz
 build/ci
-build/dplatform
-build/dplatform-cli
-build/dplatform.toml
+build/DPToken
+build/DPToken-cli
+build/DPToken.toml
 build/autotest/*
 !build/autotest/run.sh
